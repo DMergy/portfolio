@@ -217,3 +217,18 @@ nav a {
 /* --------- Footer */
 /* ---------------------------- */
 
+footer {
+    margin: var(--gutter-large) 0 var(--gutter-xx-small);
+}
+
+.footer-social {
+    margin-bottom: var(--gutter-small);
+}
+
+.footer-social a:not(:last-child) {
+    margin-right: var(--gutter-xx-small);
+}
+
+.footer-social img {
+    height: 40px;
+}
