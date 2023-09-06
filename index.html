@@ -4,17 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio for MeregillanoD</title>
+    <link rel="stylesheet" href="./styles/medium.css"/>
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap"
+        rel="stylesheet">
 </head>
-    <div class="header_text-box row">
-        <div class="header_text">
-            <h1 class="heading-primary">
-            <span>Donna J Meregillano</span>
-            </h1>
-            <p>I am a current student at Brigham Young University in Idaho through their online Pathway Worldwide program.  I am majoring in Web Design and Development.  I previously worked as a Medical Transcriptionist until it became clear that the industry was changing and some states were passing laws against subcontractors such as an MT.  I have a passion for computers and in my studies have found frontend web design and development to be my career choice moving forward.</p>
-            <a href="#contact" class="btn btn--pink">Get in touch</a>
-        </div>
-    </div>
+    
 <body>
     
+    <!-- Header -->
+    
+    <header>
+        <div class="row">
+            <nav>
+                <a href="">Work</a>
+                <a href="">Examples</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+        <div class="row header-text-container">
+            <div>
+                <h1>Donna J Meregillano</h1>
+                <p>Web Developer based in California, USA</p>
+                <a href="" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- My Work -->
+
+    <section>
+        <div class="row">
+        <h2>My Work</h2>
+        
+        <div class="work-box">
+            <div>
+                <h3>Websites</h3>
+                <p>Find links below to a few of my websites created in Web Design and Development courses.</p>
+                <ul>
+                    <li>WDD230</li>
+                    <li>WDD230</li>
+                    <li>Team Project</li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="work_links">
+            <a href="#" class="link_text">Visit Site<span>&rarr;</span></a>
+            <a href="https://github.com/djmergy/portfolio" target="_blank">
+            <img src="./images/github.svg" class="work_code" alt="GitHub">
+            </a>
+        </div>
+        </div>
+        <div class="work_image-box">
+            <img src=".images/project-1.png" class="work_image" alt="Project 1"/>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="row">
+            <h2>About Me</h2>
+            <div class="about_content">
+                <div class="about_text">
+                    <p>I am a current student at Brigham Young University in Idaho through their online Pathway Worldwide program. I
+                    am majoring in Web Design and Development. I previously worked as a Medical Transcriptionist until it became
+                    clear that the industry was changing and some states were passing laws against subcontractors such as an MT.
+                    I have a passion for computers and in my studies have found frontend web design and development to be my
+                    career choice moving forward.</p>
+                    <a href="#" class="btn">My Resume</a>
+                </div>
+
+                <div class="about_photo-container">
+                    <img class="about_photo" src="./images/portrait.jpg" alt="me"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="row">
+            <h2>Get in Touch</h2>
+            <div class="contact_info">
+                <p>Here I am, hire me.</p>
+                <a href="mailto:meregillanod@gmail.com" class="btn">meregillanod@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    
 </body>
+
+<footer role="contentinfo" class="footer">
+    <div class="row">
+        <ul class="footer_social-links">
+            <li class="footer_social-link-item">
+                <a href="https://linkedin.com//in/donna-meregillano-658291200">
+                    <img src="./images/linkedin.png" class="footer_social-image" alt="Linkedin">
+                </a>
+            </li>
+            <li class="footer_social-link-item">
+                <a href="https://www.facebook.com/donna.meregillano">
+                    <img src="./images/facebook.png" class="footer_social-image" alt="Facebook">
+                </a>
+            </li>
+            <li class="footer_social-link-item">
+                <a href="https://www.instagram.com/donnameregillano/">
+                    <img src="./images/instagram.png" class="footer_social-image" alt="Instagram">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
 </html>
