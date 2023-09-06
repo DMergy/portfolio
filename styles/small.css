@@ -29,7 +29,9 @@ body {
     font-family: 'Merriweather', serif;
     font-family: 'Playfair Display', serif;
     color: var(--black);
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 1.7;
+    font-weight: 300;
     background-color: turquoise;
 }
 
@@ -52,6 +54,7 @@ a {
 }
 
 img {
+    max-width: 100%;
     object-fit: contain;
 }
 
@@ -178,3 +181,39 @@ nav a {
 .gh-link img {
     height: 2.8rem;
 }
+
+/* ---------------------------- */
+/* --------- About Me */
+/* ---------------------------- */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-huge);
+    margin-top: var(--gutter-medium);
+}
+
+.about-text p {
+    margin-bottom: var(--gutter-x-small);
+}
+
+.about img {
+    flex: 0 0 650px;
+}
+
+/* ---------------------------- */
+/* --------- Contact */
+/* ---------------------------- */
+
+.contact {
+    max-width: 670px;
+}
+
+.contact p {
+    margin: var(--gutter-medium) 0 var(--gutter-x-small);
+}
+
+/* ---------------------------- */
+/* --------- Footer */
+/* ---------------------------- */
+
