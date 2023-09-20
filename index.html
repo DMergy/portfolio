@@ -11,18 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap"
         rel="stylesheet">
+    
 </head>
     
 <body>
     
     <!-- Header -->
     
-    <header>
+    <header id="#top">
         <div class="row">
             <nav>
-                <a href="">Work</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
         <div class="row header-text-container">
@@ -36,7 +37,7 @@
     
     <!-- My Work -->
 
-    <section>
+    <section id="work">
         <div class="row">
         <h2>My Work</h2>
         
@@ -64,7 +65,7 @@
             </div>
         </div>
 
-        <div class="work-box">
+        <div class="work-box" id="observer-target">
             <div class="work-box-text">
                 <h3>Course Work</h3>
                 <p>Web Design and Development, best practices projects.</p>
@@ -135,7 +136,7 @@
 
     <!-- Contact -->
 
-    <section>
+    <section id="contact">
         <div class="row">
             <div class="contact">
             <h2>Get in Touch</h2>
@@ -166,6 +167,13 @@
         </div>
         <p>&copy; 2023 - Donna Meregillano - </p>
     </footer>
+    
+    <a aria-label="Back to Top" class="back-to-top" href="#top">
+        <img src="images/arrowup.png" alt="Arrow Up"/>
+    </a>
+
+    <script src="scripts/index.js"></script>
+    
 </body>
 
 </html>

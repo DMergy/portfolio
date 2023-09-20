@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%; /* 10px */
+    scroll-behavior: smooth;
 }
 
 @media(max-width: 800px) {
@@ -48,10 +49,15 @@ a {
 }
 
 .btn {
-    display: inline-block;
     padding: 1.2rem 4rem;
     border: 1px solid var(--plum);
     font-size: 2.2rem;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: var(--plum);
+    color: white;
 }
 
 .btn-text {
@@ -169,6 +175,11 @@ nav a {
     font-size: 2.2rem;
 }
 
+nav a:hover {
+    background-color: var(--plum);
+    color: white;
+}
+
 .header-text-container {
     display: flex;
     align-items: center;
@@ -270,6 +281,7 @@ nav a {
     .about {
         flex-direction: column;
         gap: var(--gutter-small);
+    }
 }
 
 .about-text p {
@@ -322,4 +334,36 @@ footer {
 
 .footer-social img {
     height: 40px;
+}
+
+/* ---------------------------- */
+/* --------- Back to Top */
+/* ---------------------------- */
+
+.back-to-top {
+    position: fixed;
+    bottom: var(--gutter-small);
+    right: var(--gutter-small);
+    background: var(--plum);
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.2s;
+}
+
+.back-to-top.shown {
+    visibility: visible;
+    transform: none;
+    opacity: 1;
+}
+
+.back-to-top img {
+    height: 40px;
+
 }
