@@ -39,7 +39,7 @@ body {
     font-size: 2rem;
     line-height: 1.7;
     font-weight: 300;
-    background-color: turquoise;
+    background-color: var(--blue);
     overflow-x: hidden;
 }
 
@@ -111,7 +111,7 @@ h1 {
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: var(--gutter-medium);
 }
 
 h2::after {
@@ -150,12 +150,13 @@ ul {
 /* ---------------------------- */
 
 header {
-    display: flex;
-    flex-direction: column;
+    background-image: url('images/beach.jpg');
     height: 100vh;
-    background-color: var(--purple);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 header .row {
@@ -254,6 +255,12 @@ nav a:hover {
     gap: var(--gutter-x-small);
 }
 
+.btn-text:hover {
+    background-color: var(--plum);
+    color: white;
+    
+}
+
 .gh-link {
     transition: all 0.3s;
 }
@@ -322,6 +329,7 @@ nav a:hover {
 
 footer {
     margin: var(--gutter-large) 0 var(--gutter-xx-small);
+    
 }
 
 .footer-social {
