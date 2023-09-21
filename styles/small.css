@@ -16,10 +16,9 @@ html {
 }
 
 :root {     
-    --purple: #CF9FFF;
     --black: #000000;
-    --blue: #30D5C8;
-    --plum: #673147;
+    --sand: #ddbeaa;
+    --ocean: #469597;
 
     --nav-height: 8rem;
 
@@ -36,10 +35,10 @@ body {
     font-family: 'Merriweather', serif;
     font-family: 'Playfair Display', serif;
     color: var(--black);
-    font-size: 2rem;
+    font-size: var(--gutter-xx-small);
     line-height: 1.7;
-    font-weight: 300;
-    background-color: var(--blue);
+    font-weight: 400;
+    background-color: var(--sand);
     overflow-x: hidden;
 }
 
@@ -50,20 +49,20 @@ a {
 
 .btn {
     padding: 1.2rem 4rem;
-    border: 1px solid var(--plum);
+    border: 1px solid var(--ocean);
     font-size: 2.2rem;
     transition-duration: 0.4s;
 }
 
 .btn:hover {
-    background-color: var(--plum);
+    background-color: var(--ocean);
     color: white;
 }
 
 .btn-text {
     display: inline-block;
     padding: 0.8rem 0.5rem;
-    border-bottom: 1px solid var(--plum);
+    border-bottom: 1px solid var(--ocean);
 }
 
 img {
@@ -120,7 +119,7 @@ h2::after {
     height: 0.3rem;
     width: 12rem;
     margin-top: 1rem;
-    background-color: var(--plum);
+    background-color: var(--ocean);
 }
 
 h3 {
@@ -150,10 +149,11 @@ ul {
 /* ---------------------------- */
 
 header {
-    background-image: url('images/beach.jpg');
+    background: url("../images/beach.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed    ;
     display: flex;
     flex-direction: column;
 
@@ -177,7 +177,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--plum);
+    background-color: var(--ocean);
     color: white;
 }
 
@@ -256,7 +256,7 @@ nav a:hover {
 }
 
 .btn-text:hover {
-    background-color: var(--plum);
+    background-color: var(--ocean);
     color: white;
     
 }
@@ -328,6 +328,7 @@ nav a:hover {
 /* ---------------------------- */
 
 footer {
+    text-align: center;
     margin: var(--gutter-large) 0 var(--gutter-xx-small);
     
 }
@@ -352,7 +353,7 @@ footer {
     position: fixed;
     bottom: var(--gutter-small);
     right: var(--gutter-small);
-    background: var(--plum);
+    background: var(--ocean);
     height: 6rem;
     width: 6rem;
     display: flex;
