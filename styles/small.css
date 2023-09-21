@@ -5,14 +5,8 @@
 }
 
 html {
-    font-size: 62.5%; /* 10px */
+    font-size: 62.5%; 
     scroll-behavior: smooth;
-}
-
-@media(max-width: 800px) {
-    html {
-        font-size: 55%;
-    }
 }
 
 :root {     
@@ -80,26 +74,6 @@ section {
     margin: 0 auto;
 }
 
-@media(max-width: 1350px) {
-    .row {
-        padding: 0 var(--gutter-large)
-    }
-}
-
-@media(max-width: 850px) {
-    .row {
-        padding: 0 var(--gutter-medium)
-    }
-}
-
-@media(max-width: 560px) {
-    .row {
-        padding: 0 var(--gutter-xx-small)
-    }
-}
-
-
-
 h1, h2, h3 {
     font-weight: 400;
     line-height: 1.3;
@@ -124,20 +98,6 @@ h2::after {
 
 h3 {
     font-size: 3.6rem;
-}
-
-@media(max-width: 545px) {
-    h1 {
-        font-size: 6rem;
-    }
-
-    h2 {
-        font-size: 4rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-    }
 }
 
 ul {
@@ -203,14 +163,6 @@ nav a:hover {
     margin-top: var(--gutter-x-small);
 }
 
-@media(max-width: 1145px) {
-    .work-box {
-        gap: var(--gutter-small);
-        flex-direction: column;
-        align-items: initial;
-    }
-}
-
 .work-box:first-of-type {
     margin-top: (var(--gutter-medium));
 }
@@ -219,30 +171,12 @@ nav a:hover {
     margin-bottom: var(--gutter-mega);
 }
 
-@media(max-width: 750px) {
-    .work-box:not(:last-child) {
-        margin-bottom: var(--gutter-huge);
-    }
-}
-
 .work-box-text > *:not(h3) {
     margin-top: var(--gutter-xx-small);
 }
 
 .work-box-img {
     max-width: 726px;
-}
-
-@media(max-width: 1350px) {
-    .work-box-img {
-        max-width: 600px;
-    }
-}
-
-@media(max-width: 1145px) {
-    .work-box-img {
-        max-width: initial;
-    }
 }
 
 .work-box-img img {
@@ -284,31 +218,12 @@ nav a:hover {
     margin-top: var(--gutter-medium);
 }
 
-@media(max-width: 1145px) {
-    .about {
-        flex-direction: column;
-        gap: var(--gutter-small);
-    }
-}
-
 .about-text p {
     margin-bottom: var(--gutter-x-small);
 }
 
 .about img {
     flex: 0 0 650px;
-}
-
-@media(max-width: 1350px) {
-    .about-img {
-        flex: 0 0 500px;
-    }
-}
-
-@media(max-width: 1145px) {
-    .about-img {
-        flex: initial;
-    }
 }
 
 /* ---------------------------- */
